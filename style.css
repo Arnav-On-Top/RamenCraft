@@ -1,0 +1,108 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+header {
+    background-color: gold;
+    text-align: center;
+    padding: 30px;
+}
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+nav {
+    background-color: darkslategray;
+    text-align: center;
+    padding: 15px;
+}
+nav a {
+    color: cyan;
+    margin: 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: gold;
+}
+main {
+    background-color: white;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid darkslategray;
+    border-radius: 12px;
+}
+h2 {
+    color: orangered;
+}
+h3 {
+    color: darkgray;
+}
+li {
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: whitesmoke;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+body.dark-mode header {
+    background-color: black;
+    color: white;
+}
+body.dark-mode nav {
+    background-color: darkviolet;
+}
+body.dark-mode main {
+    background-color: darkslategray;
+    color: white;
+    border-color: powderblue;
+}
+body.dark-mode h2 {
+    color: peachpuff;
+}
+body.dark-mode h3 {
+    color: white;
+}
+body.dark-mode footer {
+    background-color: maroon;
+    color: white;
+}
+body.dark-mode .recipe-info {
+    background-color: darkslategrey;
+}
+body.dark-mode a {
+    color: #b8dfc5;
+}
+body.dark-mode nav a{
+    color: white;
+}
+body.dark-mode nav a:hover {
+    color: yellow;
+}
+.theme-toggle {
+    background-color: grey;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px;
+}
+.theme-toggle:hover {
+    background-color: darkcyan;
+}
+body.dark-mode .theme-toggle {
+    background-color: limegreen;
+    color: black;
+}
+body.dark-mode .theme-toggle:hover {
+    background-color: yellow;
+}

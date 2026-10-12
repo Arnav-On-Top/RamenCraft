@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tips</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>RamenCraft</h1>
+            <h3>Tips</h3>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="recipe.html">Recipe</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+        <div style="text-align: center;">
+            <button class="theme-toggle" onclick="toggleDarkMode()">Go Dark</button>
+        </div>
+        <main>
+            <h3>Dont Overcook Noodles</h3>
+            <p>Overboiling/cooking will make the noodles soggy and make the noodles loose texture. Result it can ruin the entire dish.</p>
+            <h3>Add Spices If needed</h3>
+            <p>Adding spices like chilli flakes, hot sauce, etc can enchance the flavor especially for someone who like spiceness.</p>
+            <h3>Salt!!</h3>
+            <p> Be extremly careful while adding salt. Any more or less than the amount required can absolutely ruin the dish. If one feels that they can overshoot the salt quantity its better to add less and while consuming, one can add more salt if needed. Extra salt is extremly difficult to fix.</p>
+            <h3>Timing Vegetables</h3>
+            <p>Some veggies are soft like spinach while some are hard like carrots. Harder items need more time to cook while softer takes less time. Avoid adding all at one go. Add the harder ones before and softer ones after so that the items r cooked appropriatly without being mushy/uncooked-hard.</p>
+            <br>
+            <h3>Ramen Starter Combos</h3>
+            <ul>
+                <li><b>Classic: </b>Ramen+Egg</li>
+                <li><b>Spicy: </b>Chilli Flakes, Sweet/Baby Corn, Hot Sauce, </li>
+                <li><b>Veggie: </b>Carrots, Spinach, Beetroot, Mushrooms</li>
+            </ul>
+        </main>
+        <footer>
+            <p>Website designed by: Arnav</p>
+        </footer>
+        <script>
+            function toggleDarkMode() {
+                document.body.classList.toggle("dark-mode");
+                if(document.body.classList.contains("dark-mode")){
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    localStorage.setItem("theme", "light");
+                }
+                updateThemeButton();
+            }
+            function updateThemeButton() {
+                var button=document.querySelector(".theme-toggle");
+                if(document.body.classList.contains("dark-mode")){
+                    button.textContent="Go Light";
+                } else {
+                    button.textContent="Go Dark";
+                }
+            }
+            if(localStorage.getItem("theme")=="dark"){
+                document.body.classList.add("dark-mode");
+            }
+            updateThemeButton();
+        </script>
+    </body>
+</html>
